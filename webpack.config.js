@@ -13,15 +13,15 @@ module.exports = {
         options: { presets: ["@babel/env"] }
       },
       {
-        test: /\.css$/,
+        test: /\.scss$/,
         use: ["style-loader", "css-loader"]
       }
     ]
   },
   resolve: { extensions: ["*", ".js", ".jsx", ".ts", ".tsx"] },
   output: {
-    path: path.resolve(__dirname, "dist/"),
-    publicPath: "/dist/",
+    path: path.resolve(__dirname, "./dist"),
+    publicPath: "/",
     filename: "bundle.js"
   },
   devServer: {
